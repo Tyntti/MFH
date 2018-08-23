@@ -1,5 +1,6 @@
 # MFH
 Mikkelin Fysikaalisen hoitolaitoksen projekti
+<<<<<<< HEAD
 
 
 Nettisivujen ideat:
@@ -31,3 +32,8 @@ ajankohtaiset tiedot vanhalta sivulta,
 
 Puhelin numero: 0400 469829 Jari Pitkänen
 mikkelin.fysikaalinen@hotmail.com
+=======
+adasdasd
+
+moi :-D
+>>>>>>> 7337f7b1d9d9f7a358560b9bf8fd3ed9049f0582
