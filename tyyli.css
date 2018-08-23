@@ -19,50 +19,41 @@
   margin-left: 0;
 }
 
-.valikko {
-    height: 100px;
-    width: 100%;
-    color: #333;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(49, 52, 50);
-    overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 45px;
-    float: left;
-    position: relative;
-    padding: 17px;
-    font-family: 'Oswald', sans-serif;
-  }
 
-  .valikkoli {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 45px;
-    float: left;
-    position: relative;
-    padding: 17px;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  li {
-    padding: 10px 14px;
-    list-style-type: none;
-    display: inline;
-    width: 100%;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+li a:hover {
+  background-color: #111;
+}
 
   img {
     max-width: 100%;
     height: auto;
     padding-bottom: 150px;
+    background-size: cover;
   }
   
   h1 {
@@ -116,13 +107,6 @@ li a {
     float: left;
   }
 
-  li {
-    padding: 11px 1px;
-    margin-bottom: auto;
-    list-style-type: auto;
-    display: inline;
-  }
-
   .info_ala {
     float: left;
     margin-top: 100px;
@@ -139,37 +123,54 @@ li a {
     background-color: blueviolet;
   } */
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
+ /* Style The Dropdown Button */
 .dropbtn {
+  background-color: #4CAF50;
   color: white;
-  text-decoration: none;
-  font-size: 45px;
-  float: left;
-  position: relative;
-  padding: 17px;
+  padding: 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 25px;
+  padding-top: 35px;
+  text-align: center;
   font-family: 'Oswald', sans-serif;
-  background-color:#333;
+  font-size: 20px;
 }
 
-.dropdown-content a:hover {background-color: #333;}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: inherit;
+  display: inline-block;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-.dropdown:hover .dropbtn {background-color: #333;}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
