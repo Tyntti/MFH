@@ -20,13 +20,12 @@
 }
 
 
-ul {
+.ul_nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-
 }
 
 li {
@@ -71,6 +70,7 @@ li a:hover {
     font-family: 'Oswald', sans-serif;
     padding-bottom: 50px;
   }
+
   
   p {
     color: rgb(0, 0, 0);
@@ -107,6 +107,10 @@ li a:hover {
     float: left;
   }
 
+  .laatikkoul {
+    list-style-type: none;
+  }
+
   .info_ala {
     float: left;
     margin-top: 100px;
@@ -114,14 +118,17 @@ li a:hover {
     font-family: 'Oswald', sans-serif;
   }
 
-  /* .alue {
+  .alue {
     display: inline-block;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     background-color: blueviolet;
-  } */
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 0px;
+  }
 
  /* Style The Dropdown Button */
 .dropbtn {
