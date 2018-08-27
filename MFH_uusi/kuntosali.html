@@ -12,14 +12,14 @@
 <body>
 
 <nav class="valikko" id="valikko">
-    <ul>
-    <li><a href="">Mikkelin Fysikaalinen Hoitolaitos</a></li> 
+    <ul class="ul_nav">
+    <li><a href="index.html">Mikkelin Fysikaalinen Hoitolaitos</a></li> 
     <div class="dropdown">
             <button class="dropbtn">Valikko</button>
             <div class="dropdown-content">
-                <a href="#">Hoidot</a>
-                <a href="#">Kuntosali</a>
-                <a href="#">Hinnasto</a>
+                <a href="hoidot.html">Hoidot</a>
+                <a href="kuntosali.html">Kuntosali</a>
+                <a href="hinnasto.html">Hinnasto</a>
             </div>
         </div>
     </ul>
@@ -28,6 +28,166 @@
 <h1>Kuntosali</h1>
 
 
+<h3>Tekstiä/mitä muuta halutaan sivulle kertomaan kuntosalista/halutaanko uusia kuvia?</h3>
+<div class="row">
+    <div class="column">
+      <img src="kuntosali1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="kuntosali2.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="kuntosali3.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="kuntosali4.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="kuntosali5.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="kuntosali6.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="kuntosali7.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="kuntosali8.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="kuntosali1.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="kuntosali2.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="kuntosali3.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="kuntosali4.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="kuntosali5.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="kuntosali6.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="kuntosali7.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="kuntosali8.JPG" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="kuntosali1.JPG" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="kuntosali2.JPG" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="kuntosali3.JPG" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="kuntosali4.JPG" onclick="currentSlide(4)" alt="Lights">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="kuntosali5.JPG" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="kuntosali6.JPG" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="kuntosali7.JPG" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="kuntosali8.JPG" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 
 
 
