@@ -1,35 +1,68 @@
-mmm
-/* puhelimet */
-@media screen and (max-device-width: 640px) {
-}
+/* mobiili */
 
-@media screen and (min-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-/* tabletit */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-}
-/* pöytäkoneet */
-@media screen and (min-width: 1024px) {
-}
-
-*{
+* {
   top: 0;
   margin: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 .ul_nav {
   list-style-type: none;
   margin: 0;
-  margin-left: 450px;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  width: 45%;
+  width: 100%;
   font-family: 'Oswald', sans-serif;
 }
+
+.laatikko {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+
+@media screen and (min-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* tabletit */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+/* pöytäkoneet */
+@media screen and (min-width: 1024px) {
+
+  .laatikko {
+    width: 30%;
+    border: 1px solid red;
+  }
+
+
+
+
+
 
 li {
   float: left;
@@ -51,38 +84,19 @@ li a:hover {
   background-color: #111;
 }
 
+
 .img_logo {
-  padding-left: 450px;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-bottom: 0%;
 }
 
 .img_etusivu {
-  width: 856px;
-  height: 500px;
-  padding-left: 450px;
+  width: 100%;
+  height: auto;
 }
 
-  img {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 150px;
-    background-size: cover;
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-  }
 
-  h2 {
-    padding: 20px;
-  }
 
   .otsikkoh1 {
     text-align: center;
@@ -161,7 +175,6 @@ li a:hover {
   
 
   .alue {
-    display: inline-block;
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 0px;
