@@ -16,13 +16,16 @@
         <img src="Kipumainos_logo.jpg" class="img_logo">
 
 
-        <ul class="ul_nav">
-            <li><a class="active" href="index.html">Mikkelin Fysikaalinen Hoitolaitos</a></li>
-            <li><a href="hoidot.html">Hoidot</a></li>
-            <li><a href="kuntosali.html">Kuntosali</a></li>
-            <li><a href="hinnasto.html">Hinnasto</a></li>
-        </ul>
-    
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
         <img class="img_etusivu" src="kuntosali5.JPG">
     
     <h1 class="otsikkoh1">Työntekijämme</h1>
@@ -117,6 +120,17 @@
                     </div>
             </div>
 
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+                </script>
 
     </body>
 </html>
