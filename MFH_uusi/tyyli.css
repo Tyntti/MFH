@@ -1,4 +1,4 @@
-
+mmm
 /* puhelimet */
 @media screen and (max-device-width: 640px) {
 }
@@ -146,10 +146,19 @@ li a:hover {
 
   .info_ala {
     float: left;
-    margin-top: 100px;
-    margin-left: 100px;
     font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: royalblue; 
+    width: 30%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 50px;
   }
+  
 
   .alue {
     display: inline-block;
@@ -292,4 +301,8 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.facebookfiidi {
+  float: left;
 }
