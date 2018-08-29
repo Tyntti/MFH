@@ -101,7 +101,7 @@ li a:hover {
   }
 
   .laatikko {
-    border: solid black 5px;
+    /* border: solid black 5px; */
     height: 400px;
     width: 300px;
     margin-left: 100px;
@@ -166,7 +166,7 @@ li a:hover {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 100%;
     padding-bottom: 100px;
     padding-top: 0px;
@@ -190,7 +190,7 @@ li a:hover {
 .column {
   float: left;
   width: 25%;
- margin-left: 100px;
+  margin-left: 100px;
 }
 
 /* The Modal (background) */
