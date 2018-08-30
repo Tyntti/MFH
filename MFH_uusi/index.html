@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="tyyli.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,16 +16,15 @@
     
         <img src="Kipumainos_logo.jpg" class="img_logo">
 
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="#">Etusivu</a>
+            <a href="#">Hoidot</a>
+            <a href="#">Kuntosali</a>
+            <a href="#">Hinnasto</a>
+        </div>
 
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+        <span id="open" class="open" onclick="openNav()">&#9776</span>
           
         <img class="img_etusivu" src="kuntosali5.JPG">
     
@@ -55,55 +55,6 @@
             </div>
     </div>
     
-    
-           
-                <!-- <h1 class="otsikkoh1">Osaamisemme</h1>
-            <div class="alue">
-            <div class="laatikkotyo">
-                <ul class="laatikkoul">
-                    <p>Merja Niinieva</p>
-                    <li>-Akupunktio</li><br>
-                    <li>-Aikuisneurologia</li><br>
-                    <li>-Tuki- ja liikuntaelinsairaudet</li><br>
-                    <li>-Myosfascial ja kinesiteippaus sekä Myofascial manipulaatio</li><br>
-                    <li>-Leikkauksen jälkeinen fysioterapia</li><br>
-                    <li>-Vanhusikäisten yksilöllinen fysioterapia</li><br>
-                    <li>-Faskia manipulaatio, tasot I ja II</li><br>
-                    </ul>
-            </div>
-    
-    
-          
-    
-            <div class="laatikkotyo">
-                    <ul class="laatikkoul">
-                        <p>Pekka Heino</p>
-                        <li>-Myofascial manipulaatio</li><br>
-                        <li>-Tuki- ja liikuntaelinsairaudet </li><br>
-                        <li>-Neurologiset sairaudet</li><br>
-                        <li>-Vanhusikäisten yksilöllinen fysioterapia</li><br>
-                        <li>-Leikkausten jälkeinen fysioterapia</li><br>
-                        <li>-Urheiluvammojen fysioterapia</li><br>
-                        <li>-Urheiluhieronta</li><br>
-                        <li>-Faskia manipulaatio tasot I ja II</li><br>
-                        </ul>
-                </div>
-    
-    
-    
-                <div class="laatikkotyo">
-                        <ul class="laatikkoul">
-                            <p>Heli Rautiainen</p>
-                            <li>-Geriatria</li><br>
-                            <li>-Kansanterveystyö</li><br>
-                            <li>-Neurologiset sairaudet</li><br>
-                            <li>-Tuki- ja liikuntaelinsairaudet</li><br>
-                            <li>-Leikkausten jälkeinen fysioterapia</li><br>
-                            </ul>
-                    </div>
-         
-                    </div> -->
-
 
 
     </div>
@@ -119,18 +70,6 @@
                         </a>
                     </div>
             </div>
-
-
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-                </script>
 
     </body>
 </html>
