@@ -12,14 +12,20 @@
 
 <body>
 
-        <img src="Kipumainos_logo.jpg" class="img_logo">
-    <ul class="ul_nav">
-            <li><a class="active" href="index.html">Mikkelin Fysikaalinen Hoitolaitos</a></li>
-            <li><a href="hoidot.html">Hoidot</a></li>
-            <li><a href="kuntosali.html">Kuntosali</a></li>
-            <li><a href="hinnasto.html">Hinnasto</a></li>
-    </ul>
+                <div class="container">
 
+        <img src="Kipumainos_logo.jpg" class="img_logo">
+
+        <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Etusivu</a>
+                <a href="hoidot.html">Hoidot</a>
+                <a href="kuntosali.html">Kuntosali</a>                        
+                <a href="hinnasto.html">Hinnasto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+        </div>
+              
 <h1 class="otsikkoh1">Hoidot</h1>
 
 <div class="alue">
@@ -67,6 +73,17 @@
         </div>
 
         </div>
-
+        <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                        </script>
+        
+        </div>
 </body>
 </html>

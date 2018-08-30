@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mikkelin Fysikaalinen Hoitolaitos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="tyyli.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,21 +14,21 @@
     <div class="container">
     
         <img src="Kipumainos_logo.jpg" class="img_logo">
-
-        <div class="nav" id="nav">
-            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-            <a href="#">Etusivu</a>
-            <a href="#">Hoidot</a>
-            <a href="#">Kuntosali</a>
-            <a href="#">Hinnasto</a>
-        </div>
-
-        <span id="open" class="open" onclick="openNav()">&#9776</span>
-          
-        <img class="img_etusivu" src="kuntosali5.JPG">
+        
+        <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Etusivu</a>
+                <a href="hoidot.html">Hoidot</a>
+                <a href="kuntosali.html">Kuntosali</a>
+                <a href="hinnasto.html">Hinnasto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+      
+            
+        <!-- <img class="img_etusivu" src="kuntosali5.JPG"> -->
     
     <h1 class="otsikkoh1">Työntekijämme</h1>
-    
     <div class="alue">
     <div class="laatikko">
             <h1>Merja Niinieva</h1>
@@ -71,5 +70,16 @@
                     </div>
             </div>
 
+            <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                    </script>
+           
     </body>
 </html>
