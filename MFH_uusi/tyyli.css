@@ -1,39 +1,50 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 
-h1 {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding-bottom: 20px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 30px;
-  margin-top: 15%;
-}
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 15%;
+  }
 
-h2 {
-  padding: 20px;
-}
+  h2 {
+    padding: 20px;
+  }
 
 
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
-.img_logo {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0%;
-}
+  .img_logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+  }
 
-.img_etusivu {
-  width: 100%;
-  height: auto;
-}
+  .img_etusivu {
+    width: 100%;
+   height: auto;
+  }
+
+  .img_kuntosali {
+    width: 30%;
+    float: left;
+    padding: 31px;
+    
+  }
+
+  .img_360 {
+    width: 50%;
+  }
 
   .otsikkoh1 {
     text-align: center;
@@ -116,23 +127,6 @@ h2 {
     width: 100%;
     padding-bottom: 100px;
     padding-top: 0px;
-  }
-
- /* Lightbox */
-  .row > .column {
-    padding: 0 8px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Create four equal columns that floats next to eachother */
-  .column {
-    float: left;
-    width: 25%;
   }
   
   /* The Modal (background) */
@@ -245,7 +239,6 @@ h2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-
   .facebookfiidi {
     float: left;
   }
@@ -324,10 +317,6 @@ h2 {
     width: 100%;
     text-align: center;
     font-size: 20px;
-  }
-  .column {
-    width: 100%;
-    display: block;
   }
   .laatikkohinnasto {
     width: 100%;
