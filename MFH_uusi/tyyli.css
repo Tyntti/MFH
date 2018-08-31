@@ -1,30 +1,9 @@
-<<<<<<< HEAD
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    margin-top: 15%;
-  }
-
-  h2 {
-    padding: 20px;
-  }
-=======
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   box-sizing: border-box;
 }
->>>>>>> 98473b51134004cf6cbd65ad99c4be0871e009bc
 
 
   .container {
@@ -45,15 +24,15 @@ html, body {
   }
 
   .img_kuntosali {
-    width: 30%;
-    float: left;
-    padding: 31px;
+    width: 25%;
+    float: left; 
+    padding: 50px;
     
   }
 
-  .img_360 {
-    width: 50%;
-  }
+  /* .img_360 {
+   
+  } */
 
   .otsikkoh1 {
     text-align: center;
@@ -249,13 +228,6 @@ html, body {
     float: left;
   }
 
-<<<<<<< HEAD
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-  }
-=======
 .facebookfiidi {
   float: left;
 }
@@ -267,7 +239,6 @@ html, body {
   background-color: #333;
   width: 100%;
 }
->>>>>>> 98473b51134004cf6cbd65ad99c4be0871e009bc
 
   .topnav a {
     float: left;
@@ -293,15 +264,9 @@ html, body {
     color:white;
   }
 
-<<<<<<< HEAD
-  .topnav.icon {
-    display: none;
-  }
-=======
 .topnav.icon {
   display: hidden;
 }
->>>>>>> 98473b51134004cf6cbd65ad99c4be0871e009bc
 
   @media screen and (max-width: 600px) {
     .topnav.responsive {
