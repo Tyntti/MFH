@@ -151,12 +151,12 @@
     color:white;
   }
 
-.topnav.icon {
-  display: hidden;
+.topnav .icon {
+  display: none;
 }
 
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
     position: relative;
   }
   .topnav.responsive .icon {

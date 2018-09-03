@@ -21,8 +21,8 @@
             <a href="kuntosali.html">Kuntosali</a>
             <a href="hinnasto.html">Hinnasto</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
+                <i class="fa fa-bars"></i>
+                </a>
       </div>
   
 
@@ -41,66 +41,20 @@
       
     
 </div>  
-  </div>
 
-  <div class="info_ala">
-      <p style="color: white">Osoite: Mikonkatu 8, Mikkeli</p>
-      <p style="color: white">Puhelinnumero: 015-365 554</p>
-      <p style="color: white">Sähköpostiosoite: mikkelinfysikaalinen@adadad.fi</p>
-          <div class="facebookfiidi">
-              <a href="https://www.facebook.com/Mikkelin-Fysikaalinen-Hoitolaitos-Ky-207088683052610/">
-                  <img src="facebookfiidi.png" style="width:42px;height:42px;border:0;">
-              </a>
-          </div>
-  </div>
-
+<div class="info_ala">
+    <p style="color: white">Osoite: Mikonkatu 8, Mikkeli</p>
+    <p style="color: white">Puhelinnumero: 015-365 554</p>
+    <p style="color: white">Sähköpostiosoite: mikkelinfysikaalinen@adadad.fi</p>
+        <div class="facebookfiidi">
+            <!-- <a href="https://www.facebook.com/Mikkelin-Fysikaalinen-Hoitolaitos-Ky-207088683052610/">
+                <img src="facebookfiidi.png" style="width:42px;height:42px;border:0;">
+            </a> -->
+        </div>
 </div>
 
-  <script>
-    // Open the Modal
-    function openModal() {
-      document.getElementById('myModal').style.display = "block";
-    }
-    
-    // Close the Modal
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-    }
-    
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-
-
-    // Navigaatiofunkio
-      function myFunction() {
+<script>
+    function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
@@ -109,6 +63,7 @@
         }
     }
     </script>
+
 
 </body>
 </html>
